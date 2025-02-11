@@ -26,17 +26,3 @@ This plugin adds the Google Customer Reviews survey opt-in script to the WooComm
 
 1. Go to **WooCommerce > Google Customer Reviews** in the WordPress admin.
 2. Enter your **Google Merchant Center ID** and save the settings.
-
-## Customization
-
-You can customize the handling and shipping days using WordPress filters:
-
-```php
-// Example: Change handling time to 2 days
-add_filter('wc_gcr_handling_days', function() { return 2; });
-
-// Example: Change domestic shipping days to 2
-add_filter('wc_gcr_domestic_days', function() { return 2; });
-
-// Example: Change international shipping days to 10
-add_filter('wc_gcr_international_days', function() { return 10; });
