@@ -94,9 +94,9 @@ function wc_gcr_add_script($order_id) {
     $order = wc_get_order($order_id);
 
     // Validate the order
-    if (!$order || !$order->get_id() || !$order->has_status('completed')) {
-        return; // Exit if order is invalid or not completed
-    }
+    if (!$order || !$order->get_id() || !$order->has_status(['completed', 'processing'])) {
+    return; // Exit if order is invalid, not completed, or not processing
+}
 
     $merchant_id = get_option('wc_gcr_merchant_id', '');
     if (empty($merchant_id) || !is_numeric($merchant_id)) {
