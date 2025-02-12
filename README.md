@@ -12,7 +12,7 @@ This plugin adds the Google Customer Reviews survey opt-in script to the WooComm
 - **Dynamic Delivery Date**: Automatically calculates delivery dates based on handling and shipping days.
 - **GTIN Support**: Supports product GTINs for better survey relevance.
 - **Language Configuration**: Uses the customer’s locale or site locale for the survey language.
-- **Order Validation**: Ensures the script runs only on valid, completed orders.
+- **Order Validation**: Ensures the script runs only on valid, Processing/completed orders.
 
 ## Installation
 
